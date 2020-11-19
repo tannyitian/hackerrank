@@ -1,0 +1,13 @@
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+    n = bin(n)
+    get_num_ones = re.findall("1+", n)
+    print(sum(map(int, max(get_num_ones))))
